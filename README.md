@@ -6,12 +6,18 @@ Clone this repo into ~/.dotfiles and then run setup.sh.
 
 ## Packages
 
-### List packages in a human readable format
+### Human Readable Format (HRF)
+To list packages in a human readable format, run either of the following:
+
 dpkg-query -l | less
 apt list --installed # Human Readable Format (HRF)
 
-### List installed packages
+### Export Packages
+Exports all installed packages into packages_list.txt:
+
 sudo dpkg-query -f '${binary:Package}\n' -W > packages_list.txt
 
-### Install packages on a fresh machine
+### Import Packages
+Installs all packages that are listed in packages_list.txt:
+
 sudo xargs -a packages_list.txt apt install
