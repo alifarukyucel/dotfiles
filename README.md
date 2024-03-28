@@ -16,9 +16,9 @@ To list packages in a human readable format, run either of the following:
 ### Export Packages
 To export all installed packages into packages_list.txt:
 
-```sudo dpkg-query -f '${binary:Package}\n' -W > packages_list.txt```
+```sudo dpkg-query -f '${binary:Package}\n' -W > packages_list_verbose.txt```
 
 ### Import Packages
 To install all packages that are listed in packages_list.txt:
 
-```sudo xargs -a packages_list.txt apt install```
+```sudo xargs -a packages_list_verbose.txt apt install```
