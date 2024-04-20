@@ -31,6 +31,11 @@ To export VS Code Extensions into vscode_extensions.txt in a re-installable form
 
 ```code --list-extensions | xargs -L 1 echo code --install-extension > vscode_extensions.txt```
 
+If vscode_extensions.txt already exists:
+
+```cat vscode_extensions.txt | xargs -L 1 echo code --install-extension > vscode_extensions.txt```
+
 ### Firefox
 Preferred profile configuration:
-.mozilla/firefox/xxxxxxxx.default/user.js
+
+```.mozilla/firefox/xxxxxxxx.default/user.js```
