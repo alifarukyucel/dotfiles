@@ -24,3 +24,13 @@ To export all installed packages into packages_list_verbose.txt:
 To install all packages that are listed in packages_list_verbose.txt:
 
 ```sudo xargs -a packages_list_verbose.txt apt install```
+
+## Configurations for Programs
+### VSCode
+To export VS Code Extensions into vscode_extensions.txt in a re-installable format:
+
+```code --list-extensions | xargs -L 1 echo code --install-extension > vscode_extensions.txt```
+
+### Firefox
+Preferred profile configuration:
+.mozilla/firefox/xxxxxxxx.default/user.js
