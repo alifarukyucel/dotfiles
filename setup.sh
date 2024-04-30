@@ -3,8 +3,6 @@ sudo apt upgrade -y
 
 sudo apt install -y zsh curl git zip unzip
 
-git clone https://github.com/alifarukyucel/dotfiles-wsl.git ~/.dotfiles
-
 GIT_CONFIG_TXT="$HOME/.dotfiles/git_config.txt"
 GIT_CONFIG="$HOME/.gitconfig"
 
