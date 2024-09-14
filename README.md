@@ -2,7 +2,7 @@
 This is a set of configuration files for bash, zsh, git, vim, and other applications that I use in my daily life. Feel free to use them if you'd like.
 
 ## Setup
-Clone this repo into ~/.dotfiles and then run setup.sh.
+Clone the contents of this repo into ~/.dotfiles and then run setup.sh.
 
 ## Packages
 List of manually installed boilerplate packages is packages_list.txt
