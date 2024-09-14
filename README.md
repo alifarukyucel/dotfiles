@@ -39,3 +39,11 @@ To import VS Code Extensions into vscode_extensions.txt:
 Preferred profile configuration:
 
 ```.mozilla/firefox/xxxxxxxx.default/user.js```
+
+## Git Configuration
+Create a file named git_config.txt and write:
+
+```
+email = {your_email}
+name = Ali Yücel
+```
