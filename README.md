@@ -45,5 +45,5 @@ Create a file named git_config.txt and write:
 
 ```
 email = {your_email}
-name = Ali Yücel
+name = {your_name}
 ```
