@@ -5,15 +5,15 @@ This is a set of configuration files for bash, zsh, git, vim, and other applicat
 Clone this repo into ~/.dotfiles and then run setup.sh.
 
 ## Packages
-List of manually installed packages is packages_list.txt
+List of manually installed boilerplate packages is packages_list.txt
 List of manually (+ automatically) installed packages is packages_list_verbose.txt
 
 ### Human Readable Format (HRF)
 To list packages in a human readable format, run either of the following:
 
-```dpkg-query -l | less```
-
 ```apt list --installed```
+
+```dpkg-query -l | less```
 
 ### Export Packages
 To export all installed packages into packages_list_verbose.txt:
@@ -31,7 +31,7 @@ To export VS Code Extensions into vscode_extensions.txt in a re-installable form
 
 ```code --list-extensions | xargs -L 1 echo code --install-extension > vscode_extensions.txt```
 
-If vscode_extensions.txt already exists:
+To import VS Code Extensions into vscode_extensions.txt:
 
 ```cat vscode_extensions.txt | xargs -L 1 echo code --install-extension > vscode_extensions.txt```
 
